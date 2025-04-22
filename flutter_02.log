@@ -1,0 +1,88 @@
+Flutter crash report.
+Please report a bug at https://github.com/flutter/flutter/issues.
+
+## command
+
+flutter doctor
+
+## exception
+
+_TypeError: Null check operator used on a null value
+
+```
+#0      GradleWrapper.updateInner (package:flutter_tools/src/flutter_cache.dart:534:49)
+#1      CachedArtifact.update (package:flutter_tools/src/cache.dart:847:11)
+#2      Cache.updateAll (package:flutter_tools/src/cache.dart:714:24)
+<asynchronous suspension>
+#3      FlutterCommand.verifyThenRunCommand (package:flutter_tools/src/runner/flutter_command.dart:1747:7)
+<asynchronous suspension>
+#4      FlutterCommand.run.<anonymous closure> (package:flutter_tools/src/runner/flutter_command.dart:1450:27)
+<asynchronous suspension>
+#5      AppContext.run.<anonymous closure> (package:flutter_tools/src/base/context.dart:153:19)
+<asynchronous suspension>
+#6      CommandRunner.runCommand (package:args/command_runner.dart:212:13)
+<asynchronous suspension>
+#7      FlutterCommandRunner.runCommand.<anonymous closure> (package:flutter_tools/src/runner/flutter_command_runner.dart:421:9)
+<asynchronous suspension>
+#8      AppContext.run.<anonymous closure> (package:flutter_tools/src/base/context.dart:153:19)
+<asynchronous suspension>
+#9      FlutterCommandRunner.runCommand (package:flutter_tools/src/runner/flutter_command_runner.dart:364:5)
+<asynchronous suspension>
+#10     run.<anonymous closure>.<anonymous closure> (package:flutter_tools/runner.dart:131:9)
+<asynchronous suspension>
+#11     AppContext.run.<anonymous closure> (package:flutter_tools/src/base/context.dart:153:19)
+<asynchronous suspension>
+#12     main (package:flutter_tools/executable.dart:94:3)
+<asynchronous suspension>
+```
+
+## flutter doctor
+
+```
+[33m[!][39m Flutter (Channel stable, 3.27.1, on Ubuntu 24.04.2 LTS 6.11.0-19-generic, locale en_US.UTF-8)
+    [32m•[39m Flutter version 3.27.1 on channel stable at /home/huy-dang/development/flutter
+    [33m![39m The flutter binary is not on your path. Consider adding /home/huy-dang/development/flutter/bin to your
+      path.
+    [33m![39m The dart binary is not on your path. Consider adding /home/huy-dang/development/flutter/bin to your
+      path.
+    [32m•[39m Upstream repository https://github.com/flutter/flutter.git
+    [32m•[39m Framework revision 17025dd882 (3 months ago), 2024-12-17 03:23:09 +0900
+    [32m•[39m Engine revision cb4b5fff73
+    [32m•[39m Dart version 3.6.0
+    [32m•[39m DevTools version 2.40.2
+    [32m•[39m If those were intentional, you can disregard the above warnings; however it is recommended to use "git"
+      directly to perform update checks and upgrades.
+
+[32m[✓][39m Android toolchain - develop for Android devices (Android SDK version 35.0.0)
+    [32m•[39m Android SDK at /home/huy-dang/Android/Sdk
+    [32m•[39m Platform android-35, build-tools 35.0.0
+    [32m•[39m Java binary at: /usr/bin/java
+    [32m•[39m Java version OpenJDK Runtime Environment (build 17.0.14+7-Ubuntu-124.04)
+    [32m•[39m All Android licenses accepted.
+
+[32m[✓][39m Chrome - develop for the web
+    [32m•[39m Chrome at google-chrome
+
+[32m[✓][39m Linux toolchain - develop for Linux desktop
+    [32m•[39m Ubuntu clang version 18.1.3 (1ubuntu1)
+    [32m•[39m cmake version 3.28.3
+    [32m•[39m ninja version 1.11.1
+    [32m•[39m pkg-config version 1.8.1
+
+[33m[!][39m Android Studio (not installed)
+    [32m•[39m Android Studio not found; download from https://developer.android.com/studio/index.html
+      (or visit https://flutter.dev/to/linux-android-setup for detailed instructions).
+
+[32m[✓][39m VS Code (version 1.97.2)
+    [32m•[39m VS Code at /snap/code/current/usr/share/code
+    [32m•[39m Flutter extension version 3.106.0
+
+[32m[✓][39m Connected device (2 available)
+    [32m•[39m Linux (desktop) • linux  • linux-x64      • Ubuntu 24.04.2 LTS 6.11.0-19-generic
+    [32m•[39m Chrome (web)    • chrome • web-javascript • Google Chrome 134.0.6998.165
+
+[32m[✓][39m Network resources
+    [32m•[39m All expected network resources are available.
+
+[33m![39m Doctor found issues in 2 categories.
+```
