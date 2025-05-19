@@ -18,21 +18,21 @@ class WorkoutService {
       'name': 'Chạy bộ 30 phút',
       'description': 'Chạy bộ nhẹ nhàng trong 30 phút để tăng sức bền',
       'difficulty': 'easy',
-      'xpReward': 30,
+      'xpReward': 25,
     },
     {
       '_id': '2',
       'name': 'Plank 5 phút',
       'description': 'Giữ tư thế plank trong 5 phút để tăng cường cơ bụng',
-      'difficulty': 'medium',
-      'xpReward': 50,
+      'difficulty': 'easy',
+      'xpReward': 25,
     },
     {
       '_id': '3',
       'name': '100 cái hít đất',
       'description': 'Thực hiện 100 cái hít đất để tăng cường cơ ngực và tay',
-      'difficulty': 'hard',
-      'xpReward': 80,
+      'difficulty': 'easy',
+      'xpReward': 25,
     },
     {
       '_id': '4',
@@ -45,15 +45,43 @@ class WorkoutService {
       '_id': '5',
       'name': '50 cái gập bụng',
       'description': 'Thực hiện 50 cái gập bụng để tăng cường cơ bụng',
-      'difficulty': 'medium',
-      'xpReward': 40,
+      'difficulty': 'easy',
+      'xpReward': 25,
     },
     {
       '_id': '6',
       'name': 'Đạp xe 1 giờ',
       'description': 'Đạp xe trong 1 giờ để tăng sức bền và đốt cháy calo',
+      'difficulty': 'easy',
+      'xpReward': 25,
+    },
+    {
+      '_id': '7',
+      'name': 'Học từ mới tiếng Anh',
+      'description': 'Học và ghi nhớ 10 từ mới tiếng Anh mỗi ngày',
       'difficulty': 'hard',
-      'xpReward': 70,
+      'xpReward': 25,
+    },
+    {
+      '_id': '8',
+      'name': 'Học lập trình 1 tiếng',
+      'description': 'Dành 1 tiếng để học và thực hành lập trình',
+      'difficulty': 'hard',
+      'xpReward': 25,
+    },
+    {
+      '_id': '9',
+      'name': 'Đọc sách 30 phút',
+      'description': 'Đọc sách để phát triển kiến thức và thói quen đọc',
+      'difficulty': 'medium',
+      'xpReward': 25,
+    },
+    {
+      '_id': '10',
+      'name': 'Viết nhật ký',
+      'description': 'Viết nhật ký để rèn luyện kỹ năng viết và suy ngẫm',
+      'difficulty': 'medium',
+      'xpReward': 25,
     },
   ];
 
@@ -129,7 +157,6 @@ class WorkoutService {
       return {
         'dailyWorkouts': dailyWorkouts,
         'completedCount': 0,
-        'maxDaily': maxDailyWorkouts,
       };
     }
 
@@ -153,7 +180,6 @@ class WorkoutService {
                     .map((json) => DailyWorkout.fromJson(json))
                     .toList(),
             'completedCount': workoutData['completedCount'],
-            'maxDaily': workoutData['maxDaily'],
           };
         } else {
           throw Exception(data['message'] ?? 'Failed to load daily workouts');
@@ -171,7 +197,6 @@ class WorkoutService {
       return {
         'dailyWorkouts': dailyWorkouts,
         'completedCount': 0,
-        'maxDaily': maxDailyWorkouts,
       };
     }
   }

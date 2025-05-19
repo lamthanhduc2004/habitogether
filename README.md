@@ -1,6 +1,6 @@
 # HabiTogether
 
-**HabiTogether** là ứng dụng xây dựng thói quen, phát triển bản thân và rèn luyện sức khỏe thông qua hệ thống nhiệm vụ, phần thưởng, thú cưng ảo và cộng đồng hỗ trợ. Ứng dụng được phát triển bằng Flutter, hỗ trợ đa nền tảng (Android, iOS, Web, Desktop) và có backend Node.js sử dụng MongoDB.
+**HabiTogether** là ứng dụng xây dựng thói quen, phát triển bản thân và rèn luyện sức khỏe thông qua hệ thống nhiệm vụ, phần thưởng và thú cưng ảo. Ứng dụng được phát triển bằng Flutter, hỗ trợ đa nền tảng (Android, iOS, Web, Desktop) và có backend Node.js sử dụng MongoDB.
 
 ---
 
@@ -13,7 +13,6 @@
 - Đăng ký, đăng nhập, bảo mật tài khoản.
 - Giao diện hiện đại, dễ sử dụng.
 - Hỗ trợ thông báo nhắc nhở.
-- Kết nối, chia sẻ và thi đua cùng bạn bè.
 
 ---
 

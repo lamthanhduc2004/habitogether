@@ -204,12 +204,10 @@ class HomeScreenState extends State<HomeScreen> {
           ),
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceAround,
-            children: List.generate(4, (index) {
+            children: List.generate(2, (index) {
               List<IconData> icons = [
                 FontAwesomeIcons.house,
                 FontAwesomeIcons.dumbbell,
-                FontAwesomeIcons.users,
-                FontAwesomeIcons.trophy,
               ];
               return AnimatedContainer(
                 duration: const Duration(milliseconds: 100),
@@ -240,22 +238,11 @@ class HomeScreenState extends State<HomeScreen> {
   }
 
   Widget _getScreenForIndex(int index) {
-    // Chỉ hiển thị màn hình thú cưng ở tab Home (index 0)
     switch (index) {
       case 0:
         return const PetScreen();
       case 1:
         return const WorkoutScreen();
-      case 2:
-        return _buildPlaceholderScreen(
-          'Cộng đồng',
-          'Chức năng cộng đồng đang được phát triển',
-        );
-      case 3:
-        return _buildPlaceholderScreen(
-          'Thành tích',
-          'Chức năng thành tích đang được phát triển',
-        );
       default:
         return const PetScreen();
     }

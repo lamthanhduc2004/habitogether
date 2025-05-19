@@ -29,8 +29,8 @@ const Map<String, String> appLocalizationsEn = {
 
   // Workout
   'workouts': 'Workouts',
-  'todaysWorkouts': 'Today\'s Workouts',
-  'allWorkouts': 'All Workouts',
+  'todaysWorkouts': 'Today\'s Plan',
+  'allWorkouts': 'Your Goals',
   'easyWorkouts': 'Easy Workouts',
   'hardWorkouts': 'Hard Workouts',
   'workoutAdded': 'Workout added to today\'s list',

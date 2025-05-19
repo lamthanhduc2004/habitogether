@@ -29,8 +29,8 @@ const Map<String, String> appLocalizationsVi = {
 
   // Workout
   "workouts": "Bài tập",
-  "todaysWorkouts": "Bài tập hôm nay",
-  "allWorkouts": "Tất cả bài tập",
+  "todaysWorkouts": "Kế hoạch hôm nay",
+  "allWorkouts": "Mục tiêu của bạn",
   "easyWorkouts": "Bài tập dễ",
   "hardWorkouts": "Bài tập khó",
   "workoutAdded": "Đã thêm bài tập vào danh sách hôm nay",

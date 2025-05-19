@@ -617,14 +617,6 @@ class _ProfileScreenState extends State<ProfileScreen>
         ),
         const SizedBox(height: 16),
         _buildActionButton(
-          title: 'Thành tích của tôi',
-          icon: FontAwesomeIcons.trophy,
-          onTap: () {
-            // Xử lý khi nhấp vào nút
-          },
-        ),
-        const SizedBox(height: 16),
-        _buildActionButton(
           title: 'Lịch sử hoạt động',
           icon: FontAwesomeIcons.clockRotateLeft,
           onTap: () {
